@@ -8,7 +8,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { IMAGE_CONFIG } from '@angular/common';
 import { NotifyComponent } from '@shared/components/notify/notify.component';
-import { GoatMascotComponent } from '@shared/motion/goat-mascot.component';
 import { SoccerCursorComponent } from '@shared/motion/soccer-cursor.component';
 
 import { AUTH_REPOSITORY_TOKEN } from '@application/ports/auth.repository';
@@ -39,7 +38,6 @@ import {
     AppRoutingModule,
     BrowserAnimationsModule,
     NotifyComponent,
-    GoatMascotComponent,
     SoccerCursorComponent
   ],
   providers: [
