@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { IMAGE_CONFIG } from '@angular/common';
 import { NotifyComponent } from '@shared/components/notify/notify.component';
+import { GoatMascotComponent } from '@shared/motion/goat-mascot.component';
+import { SoccerCursorComponent } from '@shared/motion/soccer-cursor.component';
 
 import { AUTH_REPOSITORY_TOKEN } from '@application/ports/auth.repository';
 import { AuthRepositoryImpl } from '@infrastructure/repositories/auth.repository.impl';
@@ -36,7 +38,9 @@ import {
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NotifyComponent
+    NotifyComponent,
+    GoatMascotComponent,
+    SoccerCursorComponent
   ],
   providers: [
     { provide: AUTH_REPOSITORY_TOKEN, useClass: AuthRepositoryImpl },

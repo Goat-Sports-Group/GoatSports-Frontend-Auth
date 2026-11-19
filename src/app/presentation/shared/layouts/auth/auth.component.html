@@ -1,7 +1,7 @@
-<div
+<div #shell
   class="auth-shell h-dvh min-h-0 w-full flex flex-col items-center font-sports-body relative px-3 py-4 sm:px-8 overflow-x-hidden overflow-y-auto">
 
-  <div class="my-auto w-full min-w-0 max-w-[720px] flex flex-col items-center gap-4 sm:gap-6 z-10 relative">
+  <div class="auth-shell-content my-auto w-full min-w-0 max-w-[720px] flex flex-col items-center gap-4 sm:gap-6 z-10 relative">
 
     <a (click)="navigateToHome()"
       class="flex items-center gap-3.5 cursor-pointer select-none group transition-all duration-300">
@@ -19,3 +19,7 @@
   </div>
 
 </div>
+
+<!-- Nền 3D: cố định theo màn hình, nằm dưới nội dung (z-index thấp hơn .auth-shell-content). -->
+<goat-particle-backdrop variant="wave" class="auth-backdrop-wave" />
+<goat-particle-backdrop variant="sphere" class="auth-backdrop-sphere" />
